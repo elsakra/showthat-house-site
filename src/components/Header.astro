@@ -1,15 +1,60 @@
 ---
 ---
 
-<header class="absolute top-0 left-0 z-50 w-full">
-  <div class="container max-w-xs pl-6 pt-12">
-    <nav class="space-y-1">
-      <a href="/" class="text-blue-600 underline text-sm hover:text-blue-800 transition-colors">Buy</a>
-      <div class="space-y-0.5 mt-8">
-        <a href="/#referral-fees" class="nav-link text-sm text-gray-900 block hover:text-gray-600 transition-colors">Top agents</a>
-        <a href="/#how-it-works" class="nav-link text-sm text-gray-900 block hover:text-gray-600 transition-colors">Agent results</a>
-        <a href="/#contact" class="nav-link text-sm text-gray-900 block hover:text-gray-600 transition-colors">Top Matches</a>
-      </div>
-    </nav>
+<header class="bg-white shadow-sm border-b border-gray-200 fixed top-0 left-0 z-50 w-full">
+  <div class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex items-center justify-between">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-3 hover:opacity-80 transition-opacity">
+        <img 
+          src="https://res.cloudinary.com/dil14r8je/image/upload/v1768288359/auto-site-builder/ShowThat.House/image_4.jpg" 
+          alt="ShowThat.House Logo" 
+          class="w-10 h-10 object-cover rounded"
+        >
+        <span class="text-2xl font-bold text-black">ShowThat.House</span>
+      </a>
+      
+      <!-- Navigation -->
+      <nav class="hidden md:flex items-center space-x-8">
+        <a href="/" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</a>
+        <a href="/#about" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</a>
+        <a href="/#referral-fees" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Referral Fees</a>
+        <a href="/#how-it-works" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">How It Works</a>
+        <a href="/#contact" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
+        <a href="/buy" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium">Buy</a>
+      </nav>
+      
+      <!-- Mobile menu button -->
+      <button class="md:hidden p-2" id="mobile-menu-button">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div class="md:hidden mt-4 pb-4 border-t border-gray-200 hidden" id="mobile-menu">
+      <nav class="flex flex-col space-y-3 pt-4">
+        <a href="/" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Home</a>
+        <a href="/#about" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">About</a>
+        <a href="/#referral-fees" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Referral Fees</a>
+        <a href="/#how-it-works" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">How It Works</a>
+        <a href="/#contact" class="text-gray-700 hover:text-blue-600 transition-colors font-medium">Contact</a>
+        <a href="/buy" class="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors font-medium inline-block text-center mt-2">Buy</a>
+      </nav>
+    </div>
   </div>
 </header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (menuButton && mobileMenu) {
+      menuButton.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  });
+</script>
