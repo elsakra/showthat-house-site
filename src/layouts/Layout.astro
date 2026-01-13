@@ -1,0 +1,68 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Real Estate Referrals' } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <title>{title}</title>
+  <meta name="description" content={description} />
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content={title} />
+  <meta property="og:description" content={description} />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://showthat.house" />
+  
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content={title} />
+  <meta name="twitter:description" content={description} />
+  
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "RealEstateAgent",
+    "name": "ShowThat.House",
+    "description": "Real Estate Referrals - Keep 50% to 70% of the commission",
+    "url": "https://showthat.house",
+    "email": "info@ShowThat.House",
+    "serviceArea": "Nationwide",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Real Estate Referral Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Hand the Baton Referral",
+            "description": "Referring Agent keeps 50%, Recipient Agent gets 40%"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Boots on the Ground Referral", 
+            "description": "Referring Agent keeps 70%, Recipient Agent gets 25%"
+          }
+        }
+      ]
+    }
+  }
+  </script>
+</head>
+<body class="bg-white min-h-screen">
+  <slot />
+</body>
+</html>

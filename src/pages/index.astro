@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import About from '../components/About.astro';
+import ReferralFees from '../components/ReferralFees.astro';
+import HowItWorks from '../components/HowItWorks.astro';
+import News from '../components/News.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="ShowThat.House - Real Estate Referrals"
+  description="Refer through ShowThat and keep 50% to 70% of the commission. Seamless introduction of your nationwide real estate clients to experienced local business partners."
+>
+  <Header />
+  <main>
+    <Hero />
+    <section id="about">
+      <About />
+    </section>
+    <ReferralFees />
+    <HowItWorks />
+    <News />
+    <Contact />
+  </main>
+  <Footer />
+</Layout>

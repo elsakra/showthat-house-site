@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
+    line-height: 1.6;
+  }
+}
+
+@layer components {
+  .container {
+    @apply max-w-xs pl-6 pt-12;
+  }
+  
+  .nav-link {
+    @apply text-sm text-gray-900 block mb-1 hover:text-gray-600 transition-colors;
+  }
+  
+  .buy-link {
+    @apply text-blue-600 underline text-sm hover:text-blue-800 transition-colors;
+  }
+  
+  .question-text {
+    @apply text-gray-900 text-base font-normal mt-12 mb-6;
+  }
+  
+  .search-input {
+    @apply border-0 border-b border-gray-300 bg-transparent text-sm py-2 focus:outline-none focus:border-gray-900 transition-colors;
+  }
+  
+  .hero-shape {
+    @apply w-96 h-screen bg-black rounded-tl-3xl transform rotate-12 origin-top-left;
+  }
+}
