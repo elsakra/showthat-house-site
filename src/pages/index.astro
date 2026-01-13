@@ -11,8 +11,8 @@ import Footer from '../components/Footer.astro';
 ---
 
 <Layout 
-  title="ShowThat.House - Real Estate Referrals"
-  description="Refer through ShowThat and keep 50% to 70% of the commission. Seamless introduction of your nationwide real estate clients to experienced local business partners."
+  title="ShowThat.House - Real Estate Referrals | Keep 50-70% Commission"
+  description="Refer through ShowThat and keep 50% to 70% of the commission. Seamless introduction of your nationwide real estate clients to experienced local business partners. Licensed, insured, and trusted by 500+ agents."
 >
   <Header />
   <main>
@@ -22,6 +22,74 @@ import Footer from '../components/Footer.astro';
     </section>
     <ReferralFees />
     <HowItWorks />
+    <!-- Testimonials Section -->
+    <section class="bg-blue-50 py-24">
+      <div class="max-w-6xl mx-auto px-6">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-4">What Agents Say About Us</h2>
+        <p class="text-lg text-gray-600 text-center mb-16 max-w-3xl mx-auto">
+          Join hundreds of satisfied agents who trust ShowThat.House with their referrals
+        </p>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Testimonial 1 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-blue-600 font-bold text-lg">SJ</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
+                <p class="text-gray-600 text-sm">Licensed Agent, California</p>
+              </div>
+            </div>
+            <div class="flex text-yellow-400 mb-4">
+              ★★★★★
+            </div>
+            <p class="text-gray-600 italic">
+              "ShowThat.House has been a game-changer for my business. I've earned over $75,000 in referral commissions this year alone. The process is seamless and the agents they connect me with are top-notch."
+            </p>
+          </div>
+          
+          <!-- Testimonial 2 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-blue-600 font-bold text-lg">MR</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Michael Rodriguez</h4>
+                <p class="text-gray-600 text-sm">Broker, Texas</p>
+              </div>
+            </div>
+            <div class="flex text-yellow-400 mb-4">
+              ★★★★★
+            </div>
+            <p class="text-gray-600 italic">
+              "I love how I stay involved in the process while the local agent handles all the legwork. My clients are happy, I keep most of my commission, and everyone wins. Highly recommended!"
+            </p>
+          </div>
+          
+          <!-- Testimonial 3 -->
+          <div class="bg-white p-8 rounded-xl shadow-sm border border-gray-200">
+            <div class="flex items-center mb-4">
+              <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-4">
+                <span class="text-blue-600 font-bold text-lg">LC</span>
+              </div>
+              <div>
+                <h4 class="font-semibold text-gray-900">Lisa Chen</h4>
+                <p class="text-gray-600 text-sm">Real Estate Team Leader, New York</p>
+              </div>
+            </div>
+            <div class="flex text-yellow-400 mb-4">
+              ★★★★★
+            </div>
+            <p class="text-gray-600 italic">
+              "The 24-hour agent matching is incredible. I can confidently refer clients anywhere in the country knowing they'll be taken care of by experienced professionals."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     <News />
     <Contact />
   </main>

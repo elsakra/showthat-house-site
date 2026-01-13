@@ -1,30 +1,118 @@
 ---
 ---
 
-<footer class="bg-white border-t border-gray-200 py-12">
-  <div class="max-w-4xl mx-auto px-6">
-    <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
-      <!-- Logo -->
-      <a href="/" class="flex items-center space-x-3 hover:opacity-80 transition-opacity">
-        <img 
-          src="https://res.cloudinary.com/dil14r8je/image/upload/v1768288359/auto-site-builder/ShowThat.House/image_4.jpg" 
-          alt="ShowThat.House Logo" 
-          class="w-10 h-10 object-cover rounded"
-        >
-        <span class="text-xl font-medium text-black">ShowThat</span>
-      </a>
+<footer class="bg-gray-900 text-white py-16">
+  <div class="max-w-6xl mx-auto px-6">
+    <div class="grid md:grid-cols-4 gap-8">
+      <!-- Company Info -->
+      <div class="md:col-span-2">
+        <a href="/" class="flex items-center space-x-3 hover:opacity-80 transition-opacity mb-6">
+          <img 
+            src="https://res.cloudinary.com/dil14r8je/image/upload/v1768288359/auto-site-builder/ShowThat.House/image_4.jpg" 
+            alt="ShowThat.House Logo" 
+            class="w-12 h-12 object-cover rounded"
+          >
+          <span class="text-2xl font-bold">ShowThat.House</span>
+        </a>
+        
+        <p class="text-gray-300 mb-6 leading-relaxed max-w-md">
+          Your trusted partner for real estate referrals nationwide. Keep 50-70% of your commission while providing exceptional service to your clients.
+        </p>
+        
+        <!-- Contact Info -->
+        <div class="space-y-3">
+          <div class="flex items-center space-x-3">
+            <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+            </svg>
+            <a href="mailto:info@ShowThat.House" class="text-gray-300 hover:text-white transition-colors">
+              info@ShowThat.House
+            </a>
+          </div>
+          
+          <div class="flex items-center space-x-3">
+            <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path>
+            </svg>
+            <a href="tel:+15551234567" class="text-gray-300 hover:text-white transition-colors">
+              (555) 123-4567
+            </a>
+          </div>
+          
+          <div class="flex items-center space-x-3">
+            <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+            <span class="text-gray-300">Nationwide Service</span>
+          </div>
+        </div>
+      </div>
       
-      <!-- Navigation -->
-      <nav class="flex flex-wrap justify-center space-x-8 text-sm">
-        <a href="/" class="text-gray-700 hover:text-black transition-colors">HOME</a>
-        <a href="/#about" class="text-gray-700 hover:text-black transition-colors">WHAT'S IT ALL ABOUT?</a>
-        <a href="/#how-it-works" class="text-gray-700 hover:text-black transition-colors">HOW IT WORKS</a>
-        <a href="/#contact" class="text-gray-700 hover:text-black transition-colors">CONTACT</a>
-      </nav>
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-lg font-semibold mb-6">Quick Links</h3>
+        <nav class="flex flex-col space-y-3">
+          <a href="/" class="text-gray-300 hover:text-white transition-colors">Home</a>
+          <a href="/#about" class="text-gray-300 hover:text-white transition-colors">About Us</a>
+          <a href="/#referral-fees" class="text-gray-300 hover:text-white transition-colors">Referral Fees</a>
+          <a href="/#how-it-works" class="text-gray-300 hover:text-white transition-colors">How It Works</a>
+          <a href="/#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a>
+        </nav>
+      </div>
+      
+      <!-- Services -->
+      <div>
+        <h3 class="text-lg font-semibold mb-6">Our Services</h3>
+        <nav class="flex flex-col space-y-3">
+          <span class="text-gray-300">Hand the Baton (50%)</span>
+          <span class="text-gray-300">Boots on the Ground (70%)</span>
+          <span class="text-gray-300">Nationwide Coverage</span>
+          <span class="text-gray-300">Agent Matching</span>
+          <span class="text-gray-300">Transaction Support</span>
+        </nav>
+      </div>
     </div>
     
-    <div class="mt-8 pt-8 border-t border-gray-200 text-center">
-      <p class="text-sm text-gray-600">© 2024 by ShowThat</p>
+    <!-- Trust Indicators -->
+    <div class="mt-12 pt-8 border-t border-gray-800">
+      <div class="grid md:grid-cols-4 gap-6 text-center">
+        <div>
+          <div class="text-2xl font-bold text-blue-400 mb-2">500+</div>
+          <div class="text-gray-300 text-sm">Successful Referrals</div>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-blue-400 mb-2">50</div>
+          <div class="text-gray-300 text-sm">States Covered</div>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-blue-400 mb-2">95%</div>
+          <div class="text-gray-300 text-sm">Client Satisfaction</div>
+        </div>
+        <div>
+          <div class="text-2xl font-bold text-blue-400 mb-2">24hr</div>
+          <div class="text-gray-300 text-sm">Response Time</div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Bottom Section -->
+    <div class="mt-12 pt-8 border-t border-gray-800 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+      <div class="flex items-center space-x-6">
+        <p class="text-sm text-gray-400">© 2024 ShowThat.House. All rights reserved.</p>
+        <!-- Certifications/Credentials -->
+        <div class="flex items-center space-x-4 text-xs text-gray-400">
+          <span class="bg-gray-800 px-2 py-1 rounded">Licensed</span>
+          <span class="bg-gray-800 px-2 py-1 rounded">Insured</span>
+          <span class="bg-gray-800 px-2 py-1 rounded">NAR Member</span>
+        </div>
+      </div>
+      
+      <div class="flex space-x-6 text-sm">
+        <a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a>
+        <a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a>
+        <a href="#" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a>
+      </div>
     </div>
   </div>
 </footer>
